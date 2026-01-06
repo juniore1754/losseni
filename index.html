@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Site de Losseni - Mes Textes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <header>
+        <h1>Bienvenue sur le site de Losseni</h1>
+        <p id="date"></p>
+    </header>
+
+    <input 
+        type="text" 
+        id="titre" 
+        placeholder="Titre de ton texte"
+    >
+
+    <textarea 
+        id="texte" 
+        placeholder="Écris ton texte ici..."
+    ></textarea>
+
+    <div class="actions">
+        <button class="save" onclick="enregistrer()">Enregistrer</button>
+        <button class="load" onclick="charger()">Charger</button>
+        <button class="delete" onclick="effacer()">Effacer</button>
+    </div>
+
+    <div class="info">
+        <h3>Titre sauvegardé :</h3>
+        <p id="titreAffiche">—</p>
+
+        <h3>Dernière sauvegarde :</h3>
+        <p id="dateSauvegarde">—</p>
+    </div>
+
+    <p id="status"></p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
